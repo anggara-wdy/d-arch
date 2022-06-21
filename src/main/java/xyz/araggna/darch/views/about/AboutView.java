@@ -20,7 +20,10 @@ public class AboutView extends VerticalLayout {
         img.setWidth("200px");
         add(img);
 
-        add(new H2("This place intentionally left empty"));
+        H2 h2 = new H2("This place intentionally left empty");
+        h2.addClassNames("underline text-blue-500");
+
+        add(h2);
         add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
 
         setSizeFull();
